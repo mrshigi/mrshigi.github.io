@@ -1,0 +1,91 @@
+/* Strucutre */
+body 
+{
+    background: #e6f2ff;
+    background:url(images/NERV.png);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#content 
+{
+    background:#0753a513;
+    width: 77.7%;
+    margin:auto;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+/* Naviagtion */
+#main-nav a 
+{
+    text-decoration: none;
+    background:#effaef;
+    color:black;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+#main-nav a:hover 
+{
+    background:#2d0033bb;
+}
+
+a 
+{
+    text-decoration: none;
+    background:#effaef3f;
+    color:black;
+    padding: .5px;
+    border-radius: .5px;
+}
+a:hover 
+{
+    background:#2d0033bb;
+}
+
+/* Images */
+img 
+{
+    padding: 1px;
+    border: 3.5px solid #ce9e0ebb;
+    border-radius: 3.5px;
+}
+
+/* Typography */
+h1
+{
+    color:#9600b1;
+    font-style: bold;
+}
+h2
+{
+    color:  #ff20f4;
+}
+#eva-plot
+{
+    font-style: italic;
+}
+p{
+    color:white;
+}
+
+/* Tables */
+table 
+{
+border-collapse: collapse;
+}
+
+th,
+td 
+{
+    border: 1px solid #003300;
+    padding: 3px;
+}
+th
+{
+    background: #006e009f;
+}
+td
+{
+    background: #f3f3f3;
+}
