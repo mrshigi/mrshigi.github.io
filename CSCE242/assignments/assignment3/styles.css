@@ -1,20 +1,23 @@
 /* Structure */
-body
+body 
 {
-    background: rgb(253, 204, 253);
-    font-family: Arial, Helvetica, sans-serif;
+    background:#0753a513;
+    background:url(images/Mobile.png);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-#content
+#content, #pictures
 {
-    width: 85%;
-    margin: auto;
+    background:#0753a513;
+    width: 77.7%;
+    margin:auto;
+    padding: 0px 5px;
+    border-radius: 5px;
 }
 
 #main-header,
 #main-footer
 {
-    background:rgb(198, 138, 255);
+    background:#0753a513;
     padding: 4px;
    
 }
@@ -22,37 +25,62 @@ body
 {
     border-radius: 4px  4px 0px;
 }
+
 #main-footer
 {
     border-radius: 0 0 4px 4px;
 }
-#page-content
+
+#main-content
 {
-    background:rgb(142, 255, 157);
+    background:#5907a5;
     padding: 4px;
-    border-radius: 4px 0px;
+    border-radius: 4px;
 }
 
-.content-section
+.sidebar
 {
-    background: rgb(224, 198, 249);
+    background:#0753a5cb;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.col-one
+{
+    background:#0753a5cb;
     padding: 5px 10px;
     border-radius: 5px;
+    margin: 4px;
+}
+
+.nestcol1
+{
+    background:#001e3dcb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 4px;
 }
 
 /* Main Navigation */
+
+#main-nav ul
+{
+    padding-left: 0;
+}
+
 #main-nav li
 {
+    text-align: center;
     list-style-type: none;
-    display: inline-block;
+    background: rgb(2, 211, 30);
+    padding: 4px;
+    border-bottom: 1px solid gray;
 }
 
 #main-nav a
 {
     text-decoration: none;
-    background: rgb(2, 211, 30);
-    padding: 4px;
-    border-radius: 4px;
     color: white;
 }
 
@@ -65,5 +93,45 @@ body
 #main-header h1
 {
     text-align: center;
+}
 
+body 
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* Images */
+img 
+{
+    padding: 1px;
+    border: 3.5px solid #ce9e0ebb;
+    border-radius: 3.5px;
+}
+
+/*Larger Resolutions*/
+@media (min-width: 768px) 
+{
+    body
+    {
+        background:#0753a513;
+        background:url(images/NERV.png);
+    }
+    #main-nav ul, .flex-container
+    {
+        display:flex;
+    }
+    
+    #main-nav li, .col-one, .nestcol1
+    {
+        flex: 1;
+    }
+    #pictures
+    {
+        flex: 1;
+    }
+    .sidebar
+    {
+        flex: 3;
+    }
 }
