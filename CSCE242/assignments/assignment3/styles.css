@@ -14,7 +14,7 @@ body
     border-radius: 5px;
 }
 
-#pictures
+#pictures, .pics
 {
     width: 77.7%;
     margin:auto;
