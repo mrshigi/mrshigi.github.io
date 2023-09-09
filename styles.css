@@ -1,33 +1,62 @@
 /* Strucutre */
-body
+body 
 {
-    background: #e6f2ff;
+    background:#0753a513;
+    background:url(images/Mobile.png);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#content 
+#content
 {
-    background:#e6f2ff;
-    width: 77.7%;
+    background:#0753a513;
+    width: 95%;
     margin:auto;
-    padding: 0.5px;
+    padding: 0px 5px;
+    border-radius: 5px;
 }
-#assignments 
+
+#main-header,
+#main-footer
 {
-    background:#c8e2fd;
-    width: 77.7%;
-    margin:auto;
-    padding: 0.5px;
+    background:#0753a513;
+    padding: 4px;
+   
 }
+
+#main-header
+{
+    border-radius: 4px  4px 0px;
+}
+
+#main-footer
+{
+    border-radius: 0 0 4px 4px;
+}
+
+.col-one
+{
+    background:#0753a5cb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.nestcol1
+{
+    background:#001e3dcb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
 
 /* Naviagtion */
 a 
 {
     text-decoration: none;
-    background:#effaef;
     color:black;
-    padding: 1px;
     border-radius: 4px;
+
 }
 
 a:hover 
@@ -35,43 +64,48 @@ a:hover
     background:#00882dbb;
 }
 
+/* Typography */
+#main-header h1, h2
+{
+    text-align: center;
+}
+#main-content h3, a
+{
+    text-align: center;
+    align-items: center;
+}
+
+body 
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
 /* Images */
 img 
 {
-    padding: 7.77px;
-    border: 3.5px solid #ce9e0ebb;
+    padding: 1px;
     border-radius: 3.5px;
+    align-items: center;
 }
 
-
-/* Typography */
-h1
+/*Larger Resolutions*/
+@media (min-width: 1280px) 
 {
-    color:#001a00;
-    font-style: bold;
-}
-h2
-{
-    color:  #004d00;
-}
-
-/* Tables */
-table 
-{
-border-collapse: collapse;
-}
-
-th,
-td 
-{
-    border: 1px solid #003300;
-    padding: 3px;
-}
-th
-{
-    background: #006e009f;
-}
-td
-{
-    background: #f3f3f3;
+    body
+    {
+        background:#0753a513;
+        background:url(images/NERV.png);
+    }
+    #main-nav ul, .flex-container
+    {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #main-nav li, .col-one
+    {
+        flex: 1;
+    }
 }
