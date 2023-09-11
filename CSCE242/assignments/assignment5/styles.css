@@ -1,15 +1,13 @@
 /* Structure */
 body 
 {
-    background:#0753a513;
-    background:url(images/Mobile.png);
+    background:#ffffff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #content
 {
     background:rgba(255, 255, 255, 0.075);
-    padding: 0px 5px;
     border-radius: 5px;
 }
 
@@ -30,12 +28,14 @@ body
     margin: 4px;
 }
 
-.col-one
+.col-one, .col-three
 {
-    background:#0753a5cb;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 4px;
+    background:#000000;
+
+}
+.col-two
+{
+    background: rgba(211, 2, 2, 0.524);
 }
 
 .nestcol1
@@ -48,8 +48,6 @@ body
 
 #pictures, .pics
 {
-    width: 77.7%;
-    margin:auto;
     padding: 0px 5px;
     border-radius: 5px;
 }
@@ -92,9 +90,9 @@ body
 }
 
 /* Typography */
-#main-header h1
+#main-header h1, h2
 {
-    text-align: center;
+    text-align:left;
 }
 #main-header h4
 {
@@ -128,10 +126,15 @@ img
         display:flex;
     }
     
-    #main-nav li, .col-one, .nestcol1
+    #main-nav li, .col-one, .nestcol1, .col-two
     {
         flex: 1;
     }
+    .col-three
+    {
+        flex: 1;
+    }
+
     .pics
     {
         flex:auto;
