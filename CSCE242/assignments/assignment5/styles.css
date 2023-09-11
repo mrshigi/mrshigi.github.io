@@ -8,9 +8,7 @@ body
 
 #content
 {
-    background:#0753a513;
-    width: 77.7%;
-    margin:auto;
+    background:rgba(255, 255, 255, 0.075);
     padding: 0px 5px;
     border-radius: 5px;
 }
@@ -18,21 +16,10 @@ body
 #main-header,
 #main-footer
 {
-    background:#0753a513;
+    background:#000000;
     padding: 4px;
    
 }
-
-#main-header
-{
-    border-radius: 4px  4px 0px;
-}
-
-#main-footer
-{
-    border-radius: 0 0 4px 4px;
-}
-
 
 
 .sidebar
@@ -67,37 +54,53 @@ body
     border-radius: 5px;
 }
 
-/* Main Navigation */
-
-#main-nav ul
-{
-    padding-left: 0;
-}
+/* Navigation */
 
 #main-nav li
 {
     text-align: center;
     list-style-type: none;
-    background: rgb(2, 211, 30);
+    background: rgba(211, 2, 2, 0.524);
     padding: 4px;
-    border-bottom: 1px solid gray;
 }
-
+#top-nav li
+{
+    text-align: right;
+    list-style-type: none;
+    background: rgb(0, 0, 0);
+    padding: 4px;
+}
 #main-nav a
 {
     text-decoration: none;
     color: white;
 }
 
+#top-nav a
+{
+    text-decoration: none;
+    color: white;
+    font-size: xx-small;
+
+}
+
 #main-nav a:hover
 {
-    color: purple;
+    color: rgb(128, 26, 0);
+    padding: 4px;
+    border-radius: 4px;
 }
 
 /* Typography */
 #main-header h1
 {
     text-align: center;
+}
+#main-header h4
+{
+    text-align: right;
+    color: white;
+    font-size: xx-small;
 }
 
 body 
@@ -109,9 +112,7 @@ body
 /* Images */
 img 
 {
-    padding: 1px;
-    border: 3.5px solid #ce9e0ebb;
-    border-radius: 3.5px;
+   
 }
 
 /*Larger Resolutions*/
