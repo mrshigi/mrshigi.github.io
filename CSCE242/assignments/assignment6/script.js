@@ -1,14 +1,17 @@
 
-const moveSquare = () => {
-    document.getElementById("square").classList.add("move-square");
+const moveSquare = () => 
+{
+    document.getElementById("emoji").classList.add("move-square");
 }
 
-const displayName = () => {
+const displayName = () => 
+{
     const firstName = document.getElementById("txt-first-name").value;
     console.log("Hello " + firstName + "!");
 }
 
-window.onload = () => {
+window.onload = () => 
+{
     document.getElementById("button-move").onclick = moveSquare;
     document.getElementById("button-show-name").onclick = displayName;
 }
