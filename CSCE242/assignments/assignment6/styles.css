@@ -46,8 +46,8 @@
 {
     position: relative;
     animation-name: anim-square;
-    animation-duration: 250ms;
-    animation-iteration-count: 3;
+    animation-duration: 666ms;
+    animation-iteration-count: 4;
 }
 
 @keyframes anim-square 
@@ -59,11 +59,18 @@
         left: 0px;
         top: 0px;
     }
-    25% 
+    10% 
     {
         background-color: rgba(0, 51, 145, 0.774);
         opacity: 1;
         right: 25px;
+        top: 25px;
+    }
+    25% 
+    {
+        background-color: rgba(0, 51, 145, 0.774);
+        opacity: 1;
+        right: 41px;
         top: 25px;
     }
     50% 
@@ -76,12 +83,14 @@
     {
         background-color: rgba(0, 51, 145, 0.256);
         opacity: 1;
-        top: 0px;
+        right: 41px;
+        top: 25px;
     }
     100% 
     {
         background-color: rgba(0, 51, 145, 0);
         opacity: 1;
+        left: 0px;
         top: 0px;
     }
 }

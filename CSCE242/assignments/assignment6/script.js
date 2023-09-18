@@ -20,10 +20,10 @@ const displayComment = () =>
     const comment = document.getElementById("txt-comment").value;
     const rating = document.getElementById("txt-rating").value;
     const name = document.getElementById("txt-user-name").value;
-    const h1 = document.createElement("p");
+    const usercomment = document.createElement("tr");
     const textNode = document.createTextNode("Product: "+ product+"Comment: "+ comment+ "Rating: "+ rating + "User Name: " + name);
-    h1.appendChild(textNode);
-    document.getElementById("comment").appendChild(h1);
+    usercomment.appendChild(textNode);
+    document.getElementById("comment").appendChild(usercomment);
 }
 
 window.onload = () =>
