@@ -1,4 +1,13 @@
 /* Structure */
+body
+{
+    background:#0753a5;
+}
+#content, #main-footer
+{
+    width: 85%;
+    margin:auto;
+}
 #main-content
 {
     background:#0753a5;
