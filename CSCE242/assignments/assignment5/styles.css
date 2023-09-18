@@ -28,7 +28,7 @@ body
     margin: 4px;
 }
 
-.col-one, .col-three
+.col-one, .col-three, .col-four
 {
     background:#000000;
 
@@ -68,6 +68,13 @@ body
     background: rgb(0, 0, 0);
     padding: 4px;
 }
+#footer-nav li
+{
+    text-align: center;
+    list-style-type: none;
+    background: rgb(0, 0, 0);
+    padding: 4px;
+}
 #main-nav a
 {
     text-decoration: none;
@@ -81,6 +88,13 @@ body
     font-size: xx-small;
 
 }
+#footer-nav a
+{
+    text-decoration: none;
+    color: white;
+    font-size: xx-small;
+
+}
 
 #main-nav a:hover
 {
@@ -88,6 +102,13 @@ body
     padding: 4px;
     border-radius: 4px;
 }
+#footer-nav a:hover
+{
+    color: rgb(128, 26, 0);
+    padding: 4px;
+    border-radius: 4px;
+}
+
 
 /* Typography */
 #main-header h1, h2
@@ -121,12 +142,12 @@ img
         background:#0753a513;
         background:url(images/NERV.png);
     }
-    #main-nav ul, .flex-container
+    #top-nav ul, #main-nav ul, #footer-nav ul, .flex-container
     {
         display:flex;
     }
     
-    #main-nav li, .col-one, .nestcol1, .col-two
+    #top-nav ul, #main-nav li, #footer-nav li, .col-one, .nestcol1, .col-two, .col-four
     {
         flex: 1;
     }
