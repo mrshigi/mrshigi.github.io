@@ -18,13 +18,25 @@ const displayComment = () =>
 {
     const product = document.getElementById("txt-product-name").value;
     const comment = document.getElementById("txt-comment").value;
-    const rating = document.getElementById("txt-rating").value;
+    const rating = document.getElementById("rating").value;
     const name = document.getElementById("txt-user-name").value;
-    const usercomment = document.createElement("tr");
-    const textNode = document.createTextNode("Product: "+ product+"Comment: "+ comment+ "Rating: "+ rating + "User Name: " + name);
-    usercomment.appendChild(textNode);
-    document.getElementById("comment").appendChild(usercomment);
-}
+    const userCommentSection = document.createElement("section");
+    userCommentSection.classList.add("user-comment-section");
+    userCommentSection.innerHTML = `
+    <table>
+        <tr>
+            <td><h3>${product}</h3></td>
+        </tr>
+        <tr>
+            <td>${rating}/5 stars, ${comment}</td>
+        </tr>
+        <tr>
+            <td>By ${name}</td>
+        </tr>
+    </table>
+`;
+    document.getElementById("comment").appendChild(userCommentSection);
+};
 
 window.onload = () =>
 {

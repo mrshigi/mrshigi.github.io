@@ -29,7 +29,23 @@
     border-radius: 5px;
     margin: 4px;
 }
+.user-comment-section 
+{
+    background: #41fcda31;
+    border: 1px solid #0073ff;
+    padding: 10px;
+    margin-top: 10px;
+}
 
+.user-comment-section table 
+{
+    width: 100%;
+}
+
+.user-comment-section table td 
+{
+    padding: 5px;
+}
 
 /* Animation */
 
@@ -109,14 +125,15 @@ body
 {
     text-align: center;
 }
-#comment p label
+#txt-comment
 {
-    text-align: left;
+    height: 24px;
 }
-#comment p input
+#rating
 {
-    text-align: left;
+
 }
+
 /* Images */
 
 img 
