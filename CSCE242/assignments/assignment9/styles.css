@@ -51,7 +51,7 @@ body {
     border-color: var(--primary);
 }
 
-/* Hamburger menu */
+/* Hamburger menu styles */
 #hamburger {
     display: none;
 }
@@ -63,7 +63,7 @@ body {
     }
     #main-nav 
     {
-        display: none; 
+        display: none; /* Hide the regular nav on small screens */
     }
 }
 
@@ -169,7 +169,7 @@ h1 {
     border-color: var(--primary);
 }
 
-/* thermometer */
+/* Additional styles for thermometer */
 #thermometer {
     width: 50px;
     height: 300px;
@@ -189,7 +189,7 @@ h1 {
     border-radius: 2px;
 }
 
-/* menu */
+/* Updated menu styles */
 .menu {
     display: block;
     background-color: var(--headback);
@@ -215,8 +215,8 @@ h1 {
 }
 
 /* Media query for small screens */
-@media only screen and (max-width: 600px) 
-{
+@media only screen and (max-width: 600px) {
+    /* Adjust exercise section for small screens */
     .exercise-section 
     {
         width: 100%;

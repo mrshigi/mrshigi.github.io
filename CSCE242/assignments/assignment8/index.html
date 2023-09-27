@@ -16,7 +16,7 @@
         </div>
     </header>
 
-    <nav id="main-nav" class="menu hide-small">
+    <nav id="main-nav" class="navbar hide-small">
         <ul id="nav-items">
             <li id="nav-exercise-1"><a href="#">Exercise 1</a></li>
             <li id="nav-exercise-2"><a href="#">Exercise 2</a></li>
@@ -55,13 +55,17 @@
         <section class="exercise-section padded-area" id="exercise-2">
             <h2>Fundraising Thermometer</h2>
             <p>
+                Goal: $10,000
+            </p>
+            <p>
                 <label for="txt-donation-amount">Donation Amount:</label>
                 <input type="number" id="txt-donation-amount" />
             </p>
             <button id="button-update-thermometer">Update Thermometer</button>
-            <div id="thermometer"></div>
+            <div id="thermometer">
+                <div id="thermometer-fill"></div>
+            </div>
         </section>
-
     </main>
 
     <footer id="main-footer">

@@ -51,7 +51,7 @@ body {
     border-color: var(--primary);
 }
 
-/* Hamburger menu */
+/* Hamburger menu styles */
 #hamburger {
     display: none;
 }
@@ -63,7 +63,7 @@ body {
     }
     #main-nav 
     {
-        display: none; 
+        display: none; /* Hide the regular nav on small screens */
     }
 }
 
@@ -158,18 +158,8 @@ h1 {
 {
     display: none;
 }
-/* Exercise borders */
-.exercise-border 
-{
-    border-bottom: 4px solid transparent;
-}
 
-.exercise-border.active 
-{
-    border-color: var(--primary);
-}
-
-/* thermometer */
+/* Additional styles for thermometer */
 #thermometer {
     width: 50px;
     height: 300px;
@@ -189,48 +179,50 @@ h1 {
     border-radius: 2px;
 }
 
-/* menu */
-.menu {
-    display: block;
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--headback);
     padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.menu li 
-{
-    list-style-type:none;
-    margin-bottom: 10px;
+.navbar #nav-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.menu a 
-{
-    text-decoration: none;
+.navbar #nav-items li {
+    margin-right: 20px;
+}
+
+.navbar #nav-items li:last-child {
+    margin-right: 0;
+}
+
+.navbar #nav-items a {
     color: black;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.menu a:hover 
-{
+.navbar #nav-items a:hover {
     color: var(--primary);
 }
 
 /* Media query for small screens */
-@media only screen and (max-width: 600px) 
-{
-    .exercise-section 
-    {
-        width: 100%;
-    }
-    .menu 
-    {
-        display: none;
-    }
-    #hamburger 
-    {
+@media only screen and (max-width: 600px) {
+    #nav-items {
         display: block;
     }
-    #main-nav 
-    {
-        display: none;
+
+    #nav-items li {
+        display: block;
+        margin: 10px 0;
     }
 }

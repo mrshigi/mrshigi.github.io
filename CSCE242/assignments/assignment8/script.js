@@ -1,20 +1,16 @@
-const toggleMenu = () => 
-{
+const toggleMenu = () => {
     const navItems = document.getElementById("nav-items");
     navItems.classList.toggle("hide-small");
 };
 
-const showExercise = (exerciseId) => 
-{
+const showExercise = (exerciseId) => {
     const exercises = document.querySelectorAll(".exercise-section");
-    exercises.forEach((exercise) => 
-    {
+    exercises.forEach((exercise) => {
         exercise.style.display = "none";
     });
 
     const borders = document.querySelectorAll(".exercise-border");
-    borders.forEach((border) => 
-    {
+    borders.forEach((border) => {
         border.classList.remove("active");
     });
 
@@ -25,18 +21,14 @@ const showExercise = (exerciseId) =>
     activeBorder.classList.add("active");
 
     const thermometer = document.getElementById("thermometer");
-    if (exerciseId === "exercise-2") 
-    {
+    if (exerciseId === "exercise-2") {
         thermometer.style.display = "block";
-    } 
-    else 
-    {
+    } else {
         thermometer.style.display = "none";
     }
 };
 
-const determineOldestToYoungest = () => 
-{
+const determineOldestToYoungest = () => {
     const ages = [];
     for (let i = 1; i <= 3; i++) {
         const age = parseInt(document.getElementById(`txt-age-${i}`).value);
@@ -54,12 +46,10 @@ const determineOldestToYoungest = () =>
     oldestYoungestDisplay.innerText = "Oldest to Youngest: " + sortedAges.join(', ');
 };
 
-const updateThermometer = () => 
-{
+const updateThermometer = () => {
     const donationAmount = parseInt(document.getElementById("txt-donation-amount").value);
 
-    if (isNaN(donationAmount) || donationAmount < 0) 
-    {
+    if (isNaN(donationAmount) || donationAmount < 0) {
         alert("Please enter a valid donation amount.");
         return;
     }
@@ -72,17 +62,14 @@ const updateThermometer = () =>
     thermometerFill.style.background = 'linear-gradient(to top, red, red)';
 };
 
-window.onload = () => 
-{
+window.onload = () => {
     document.getElementById("hamburger").onclick = toggleMenu;
 
-    document.getElementById("nav-exercise-1").addEventListener("click", () => 
-    {
+    document.getElementById("nav-exercise-1").addEventListener("click", () => {
         showExercise("exercise-1");
     });
 
-    document.getElementById("nav-exercise-2").addEventListener("click", () => 
-    {
+    document.getElementById("nav-exercise-2").addEventListener("click", () => {
         showExercise("exercise-2");
     });
 
