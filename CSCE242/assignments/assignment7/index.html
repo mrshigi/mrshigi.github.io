@@ -26,55 +26,50 @@
     </header>
 
     <main id="main-content" class="columns">
-        <section class="padded-area">
-            <h2>Mood Ring</h2>
-
-            <p class="columns">
-                <label for="txt-mood">Mood:</label>
-                <input type="text" id="txt-mood" />
-            </p>
-
-            <button id="button-change-mood">Change Mood</button>
-
-            <div id="mood-display"></div>
-        </section>
-        <section class="padded-area">
-            <div id="square"></div>
-            <button id="button-gradient">Color My Square</button>
-        </section>
-
-        <section class="padded-area">
-            <h2>Order</h2>
-
-            <p class="columns">
-                <label for="txt-num">Number of Coffees:</label>
-                <input type="text" id="txt-num" />
-                <div id="error-num" class="error hidden"></div>
-            </p>
-
-            <p class="columns">
-                <label for="txt-type">Coffee Type:</label>
-                <input type="text" id="txt-type" />
-            </p>
-
-            <button id="button-show-data">Show Order</button>
-
-            <div id="coffee-order"></div>
-        </section>
-        <section>
-            <form>
-                <p class="columns">
-                    <label for="txt-num">First Name:</label>
-                    <input type="text" id="txt-num" required/>
+        <!-- Exercise 1: Determining the Oldest and Youngest -->
+        <section class="padded-area" id="exercise-1">
+            <h2>Determining the Oldest and Youngest</h2>
+            <div class="columns">
+                <p>
+                    <label for="txt-name-1">Name 1:</label>
+                    <input type="text" id="txt-name-1" />
+                    <label for="txt-age-1">Age:</label>
+                    <input type="number" id="txt-age-1" />
                 </p>
-
-                <button type="submit">Submit</button>
-            </form>
+                <p>
+                    <label for="txt-name-2">Name 2:</label>
+                    <input type="text" id="txt-name-2" />
+                    <label for="txt-age-2">Age:</label>
+                    <input type="number" id="txt-age-2" />
+                </p>
+                <p>
+                    <label for="txt-name-3">Name 3:</label>
+                    <input type="text" id="txt-name-3" />
+                    <label for="txt-age-3">Age:</label>
+                    <input type="number" id="txt-age-3" />
+                </p>
+            </div>
+            <button id="button-determine-oldest">Determine Oldest to Youngest</button>
+            <div id="oldest-youngest-display"></div>
         </section>
+
+        <!-- Exercise 2: Fundraising Thermometer -->
+        <section class="padded-area" id="exercise-2">
+            <h2>Fundraising Thermometer</h2>
+            <p>
+                <label for="txt-donation-amount">Donation Amount:</label>
+                <input type="number" id="txt-donation-amount" />
+            </p>
+            <button id="button-update-thermometer">Update Thermometer</button>
+            <div id="thermometer"></div>
+        </section>
+
     </main>
     <footer id="main-footer" class="padded-area">
         <p>Goodbye</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
