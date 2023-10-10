@@ -2,72 +2,39 @@
 <html lang="en">
 
 <head>
-    <title>CSCE242: A7</title>
+    <title>CSCE242: A8</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header id="main-header" class="padded-area">
-        <h1>If Statement Assignment</h1>
-        <div id="hamburger" class="hide-large">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    <div id="content">
+    <header id="main-header">
+        <h1>Loops</h1>
     </header>
+    <main id="main-content">
+        <div class="flex-container">
+            <section class="col-one">
+                <h2>Running Man</h2>
+                <img id="running-man" src="images/runningman.png" alt="Running Man">
+            </section>
 
-    <nav id="main-nav" class="navbar hide-small">
-        <ul id="nav-items">
-            <li id="nav-exercise-1"><a href="#">Exercise 1</a></li>
-            <li id="nav-exercise-2"><a href="#">Exercise 2</a></li>
-        </ul>
-    </nav>
-
-    <main id="main-content" class="columns">
-        <!-- Exercise 1: Determining the Oldest and Youngest -->
-        <section class="exercise-section padded-area" id="exercise-1">
-            <h2>Determining the Oldest and Youngest</h2>
-            <div class="columns">
+            <section class="exercise-section padded-area" id="exercise-2">
+                <h2>Fundraising Thermometer</h2>
                 <p>
-                    <label for="txt-name-1">Name 1:</label>
-                    <input type="text" id="txt-name-1" />
-                    <label for="txt-age-1">Age:</label>
-                    <input type="number" id="txt-age-1" />
+                    Goal: $10,000
                 </p>
                 <p>
-                    <label for="txt-name-2">Name 2:</label>
-                    <input type="text" id="txt-name-2" />
-                    <label for="txt-age-2">Age:</label>
-                    <input type="number" id="txt-age-2" />
+                    <label for="txt-donation-amount">Donation Amount:</label>
+                    <input type="number" id="txt-donation-amount" />
                 </p>
-                <p>
-                    <label for="txt-name-3">Name 3:</label>
-                    <input type="text" id="txt-name-3" />
-                    <label for="txt-age-3">Age:</label>
-                    <input type="number" id="txt-age-3" />
-                </p>
-            </div>
-            <button id="button-determine-oldest">Determine Oldest to Youngest</button>
-            <div id="oldest-youngest-display"></div>
-        </section>
-
-        <!-- Exercise 2: Fundraising Thermometer -->
-        <section class="exercise-section padded-area" id="exercise-2">
-            <h2>Fundraising Thermometer</h2>
-            <p>
-                Goal: $10,000
-            </p>
-            <p>
-                <label for="txt-donation-amount">Donation Amount:</label>
-                <input type="number" id="txt-donation-amount" />
-            </p>
-            <button id="button-update-thermometer">Update Thermometer</button>
-            <div id="thermometer">
-                <div id="thermometer-fill"></div>
-            </div>
-        </section>
+                <button id="button-update-thermometer">Update Thermometer</button>
+                <div id="thermometer">
+                    <div id="thermometer-fill"></div>
+                </div>
+            </section>
+        </div>
     </main>
-
+    </div>
     <footer id="main-footer">
         <p>
             Goodbye!
@@ -75,7 +42,7 @@
         <p>&copy; mrshigi.github.io</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>

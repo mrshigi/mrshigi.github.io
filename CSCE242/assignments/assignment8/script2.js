@@ -6,8 +6,6 @@ let animationInterval;
 
 const toggleRunningMan = () => {
     isRunning = !isRunning;
-    runningMan.src = isRunning ? "images/runningman.png" : "images/walkingman.png";
-    runningMan.classList.toggle("running", isRunning); // Toggle the running class
     if (isRunning) {
         startRunningAnimation();
     } else {
@@ -16,6 +14,7 @@ const toggleRunningMan = () => {
 };
 
 const startRunningAnimation = () => {
+    runningMan.src = "images/runningman.png";
     animationInterval = setInterval(() => {
         // Adjust left margin for running man animation
         const marginLeft = parseFloat(getComputedStyle(runningMan).getPropertyValue('--margin-left')) || 0;
@@ -24,11 +23,10 @@ const startRunningAnimation = () => {
 };
 
 const stopRunningAnimation = () => {
+    runningMan.src = "images/walkingman.png";
     clearInterval(animationInterval);
     runningMan.style.setProperty('--margin-left', '0'); // Reset margin when stopped
 };
-
-document.getElementById("running-man").addEventListener("click", toggleRunningMan);
 
 const updateThermometer = () => {
     const donationAmount = parseInt(document.getElementById("txt-donation-amount").value);
@@ -41,8 +39,20 @@ const updateThermometer = () => {
     const goal = 10000;
     const percentage = Math.min((donationAmount / goal) * 100, 100);
 
-    // Adjust thermometer gradient using CSS variable
-    thermometerFill.style.setProperty('--fill-percentage', `${percentage}%`);
+    // Gradually increase the fill percentage
+    const currentPercentage = parseFloat(thermometerFill.style.getPropertyValue('--fill-percentage')) || 0;
+    const increment = (percentage - currentPercentage) / 100; // Increment by 1% each time
+
+    const fillUsingLoop = () => {
+        if (currentPercentage < percentage) {
+            const newPercentage = Math.min(currentPercentage + increment, percentage);
+            thermometerFill.style.setProperty('--fill-percentage', `${newPercentage}%`);
+            currentPercentage = newPercentage;
+            setTimeout(fillUsingLoop, 10); // Adjust the interval for smoother fill
+        }
+    };
+
+    fillUsingLoop();
 };
 
 window.onload = () => {

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Sean Raudat for CSCE 242 -->
+<html>
+
+<head>
+    <title>Project Part 1</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header id="main-header" class="padded-area">
+        <h1>Shigi Finance</h1>
+        <div id="hamburger" class="hide-large">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="main-nav-items" class="hidden">
+            <li><a href="#">Home</a></li>
+            <li><a href="market.html">Market</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="account.html">Account</a></li>
+    </header>
+    <h1> Total Value Invested </h1>
+    <main id="main-content">
+        <div class="flex-container">
+            <section class="col-one">
+                <h2>Daily Movers</h2>
+                <button id="button-show">Show</button>
+                <button id="button-hide">Hide</button>
+                <div id="image" style="display:none"><img src="images/QR.png" /></div>
+            </section>
+            <section class="col-one">
+                <h2>News Articles</h2>
+                <button id="button-move">Dance</button>
+                <div id="emoji"><span style='font-size:100px;'>&#128065;</span></div>
+            </section>
+
+            <section class="col-one">
+                <h2>Watchlist</h2>
+                <section class="comment1">
+                    <div id="comment">
+                        <table>
+                            <tr>
+                                <td><label for="txt-product-name">Product Name:</label> </td>
+                                <td><br /></td>
+                                <td><input type="text" id="txt-product-name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="txt-comment">Comment:</label></td>
+                                <td><br /></td>
+                                <td> <input type="text" id="txt-comment"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="rating">Rating:</label></td>
+                                <td><br /></td>
+                                <td> <input type="number" id="rating" min="0" max="5"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="txt-user-name">User Name:</label></td>
+                                <td><br /></td>
+                                <td><input type="text" id="txt-user-name"></td>
+                            </tr>
+                        </table>
+                        <button id="button-comment">Add Comment</button>
+                    </div>
+                </section>
+            </section>
+        </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

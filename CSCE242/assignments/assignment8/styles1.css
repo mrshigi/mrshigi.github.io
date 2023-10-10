@@ -1,0 +1,114 @@
+/* Structure */
+body {
+    background: #aac6e3;
+}
+
+#content,
+#main-footer {
+    width: 85%;
+    margin: auto;
+}
+
+#main-content {
+    background: #0753a5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#main-header,
+#main-footer {
+    background: #014e9f82;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#main-header {
+    border-radius: 4px;
+}
+
+#main-footer {
+    border-radius: 4px;
+}
+
+.col-one,
+.exercise-section {
+    background: #c7f5e2;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+/* Exercise borders */
+.exercise-border {
+    border-bottom: 4px solid transparent;
+}
+
+.exercise-border.active {
+    border-color: var(--primary);
+}
+
+/* Form */
+label,
+input {
+    display: block;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
+
+.error {
+    color: red;
+}
+
+/* thermometer */
+#thermometer {
+    width: 50px;
+    height: 300px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 2px;
+}
+
+#thermometer-fill {
+    height: var(--fill-percentage, 0%);
+    background: linear-gradient(to top, red, red);
+}
+
+#running-man {
+    cursor: pointer;
+    transition: margin-left 0.2s ease-in-out;
+}
+
+#running-man.running {
+    margin-left: var(--margin-left, 0);
+}
+
+/* Typography */
+#main-header h1 {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Media Query */
+@media (min-width: 1280px) {
+    body {
+        background: #aac6e3;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .col-one,
+    .exercise-section {
+        flex: 1;
+    }
+}
