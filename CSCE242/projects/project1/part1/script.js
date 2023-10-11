@@ -1,3 +1,7 @@
+const toggleNav = () =>
+{
+    document.getElementById("main-nav-items").classList.toggle("hidden");
+};
 const slide = () => 
 {
     const currentImage = document.querySelector("#slideshow :not(.hidden)");
@@ -7,7 +11,7 @@ const slide = () =>
 
     if(nextImage == null) 
     {
-        nextImage = document.querySelector("#slideshow :first-child");
+        nextImage = document.querySelector("#slideshow :not(.hidden)");
     }
 
     nextImage.classList.remove("hidden");
@@ -17,5 +21,5 @@ const slide = () =>
 window.onload = () =>
 {
     document.getElementById("nav-toggle").onclick = toggleNav;
-    setInterval(slide, 2000)
+    setInterval(slide, 2000);
 };
