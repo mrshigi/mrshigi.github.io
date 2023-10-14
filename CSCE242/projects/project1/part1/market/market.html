@@ -13,14 +13,77 @@
                     <div></div>
                     <div></div>
                 </div>
+                <nav id="main-nav">
                 <ul id="main-nav-items" class="hidden">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Market</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="account.html">Account</a></li>
+                </ul>
+                </nav>
             </header>
             <main id="main-content">
+                <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR to USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+                <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:110%";width:100%>
+    <div id="tradingview_0ad70" style="height:calc(100% - 72px);width:100%"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.widget(
+    {
+    "autosize": true,
+    "symbol": "AMEX:SPY",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "light",
+    "style": "1",
+    "locale": "en",
+    "enable_publishing": false,
+    "allow_symbol_change": true,
+    "container_id": "tradingview_0ad70"
+  }
+    );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
 
             </main>
         </body>
