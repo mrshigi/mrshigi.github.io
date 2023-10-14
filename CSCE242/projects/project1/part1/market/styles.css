@@ -75,6 +75,15 @@ body
 {
     color: purple;
 }
+
+/*Typograpghy*/
+
+#main-header h1
+{
+    text-align: center;
+}
+
+
 /*Larger Resolutions*/
 @media (min-width: 1280px) 
 {
