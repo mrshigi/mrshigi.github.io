@@ -75,6 +75,14 @@ body
 {
     color: purple;
 }
+.hidden
+{
+    display: none;
+}
+.hide
+{
+    visibility: hidden;
+}
 /*Larger Resolutions*/
 @media (min-width: 1280px) 
 {

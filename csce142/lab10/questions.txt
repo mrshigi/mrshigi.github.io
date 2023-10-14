@@ -1,0 +1,25 @@
+Q What is 2+2
+A 4
+Q false || true == 
+A true
+Q What is the difference between a
+	a) if statement
+	b) switch statement
+A A switch statement has
+	i) cases that can overlap
+	ii) an optional default
+	iii) The value switched on must be integral or a String
+ An if:
+	i) uses boolean value tests
+	ii) cannot have overlapping cases
+	iii) has an optional else
+Q true && false ==
+A false
+Q name 4 facts about if statements
+A if statements
+	i) have 1 "if" part, 0-many "else if"s, and possibly an "else"
+	ii) ifs are braching statements
+	iii) do their tests in a top to bottom order
+	iv) only one test or else will "pass"
+Q !true ==
+A false
