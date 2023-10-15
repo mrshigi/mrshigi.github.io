@@ -2,20 +2,17 @@ const toggleNav = () =>
 {
     document.getElementById("main-nav-items").classList.toggle("hidden");
 };
+
 const slide = () => 
 {
     const currentImage = document.querySelector("#slideshow :not(.hidden)");
     currentImage.classList.add("hidden");
-
     let nextImage = currentImage.nextElementSibling;
-
     if(nextImage == null) 
     {
         nextImage = document.querySelector("#slideshow :not(.hidden)");
     }
-
     nextImage.classList.remove("hidden");
-
 };
 
 window.onload = () =>

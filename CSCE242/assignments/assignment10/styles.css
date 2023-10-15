@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.toy-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.toy-image {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.toy-description {
+  font-size: 14px;
+}
+
+.toy-price 
+{
+  font-weight: bold;
+  color: green;
+}
+.container 
+{
+  position: relative;
+  width: 50%;
+}
+
+.image 
+{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle
+ {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text 
+{
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+#content
+ {
+  background: #0753a513;
+  width: 95%;
+  margin: auto;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+#main-header,
+#main-footer {
+  background: #0753a513;
+  padding: 4px;
+}
+
+#main-header {
+  border-radius: 4px 4px 0px;
+}
+
+#main-footer {
+  border-radius: 0 0 4px 4px;
+}
+
+.col-one {
+  background: #0753a5cb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 4px;
+}
+
+.nestcol1 {
+  background: #001e3dcb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 4px;
+}
+/* Typography */
+ h1,
+h2 {
+  text-align: center;
+}
+
+/* Images */
+img {
+  padding: 1px;
+  border-radius: 3.5px;
+  align-items: center;
+}
+
+/*Larger Resolutions*/
+@media (min-width: 1280px) {
+  body {
+    background: #252b31;
+  }
+  #main-nav ul,
+  .flex-container, .flex-container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #main-nav li,
+  .col-one {
+    flex: 1;
+  }
+}

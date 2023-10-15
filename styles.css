@@ -1,113 +1,97 @@
 /* Strucutre */
-body 
-{
-    background:#0753a513;
-    background:url(images/Mobile.png);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body {
+  background: #0753a513;
+  background: url(images/Mobile.png);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-#content
-{
-    background:#0753a513;
-    width: 95%;
-    margin:auto;
-    padding: 0px 5px;
-    border-radius: 5px;
+#content {
+  background: #0753a513;
+  width: 95%;
+  margin: auto;
+  padding: 0px 5px;
+  border-radius: 5px;
 }
 
 #main-header,
-#main-footer
-{
-    background:#0753a513;
-    padding: 4px;
-   
+#main-footer {
+  background: #0753a513;
+  padding: 4px;
 }
 
-#main-header
-{
-    border-radius: 4px  4px 0px;
+#main-header {
+  border-radius: 4px 4px 0px;
 }
 
-#main-footer
-{
-    border-radius: 0 0 4px 4px;
+#main-footer {
+  border-radius: 0 0 4px 4px;
 }
 
-.col-one
-{
-    background:#0753a5cb;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 4px;
+.col-one {
+  background: #0753a5cb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 4px;
 }
 
-.nestcol1
-{
-    background:#001e3dcb;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 4px;
+.nestcol1 {
+  background: #001e3dcb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 4px;
 }
-
 
 /* Naviagtion */
-a 
-{
-    text-decoration: none;
-    color:black;
-    border-radius: 4px;
-
+a {
+  text-decoration: none;
+  color: black;
+  border-radius: 4px;
 }
 
-a:hover 
-{
-    background:#00882dbb;
+a:hover {
+  background: #00882dbb;
 }
 
 /* Typography */
-#main-header h1, h2
-{
-    text-align: center;
+#main-header h1,
+h2 {
+  text-align: center;
 }
-#main-content h3, a
-{
-    text-align: center;
-    align-items: center;
+#main-content h3,
+a {
+  text-align: center;
+  align-items: center;
 }
 
-body 
-{
-    font-family:Arial, Helvetica, sans-serif;
-    color: white;
-    align-items: center;
-    justify-content: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Images */
-img 
-{
-    padding: 1px;
-    border-radius: 3.5px;
-    align-items: center;
+img {
+  padding: 1px;
+  border-radius: 3.5px;
+  align-items: center;
 }
 
 /*Larger Resolutions*/
-@media (min-width: 1280px) 
-{
-    body
-    {
-        background:#0753a513;
-        background:url(images/NERV.png);
-    }
-    #main-nav ul, .flex-container
-    {
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #main-nav li, .col-one
-    {
-        flex: 1;
-    }
+@media (min-width: 1280px) {
+  body {
+    background: #0753a513;
+    background: url(images/NERV.png);
+  }
+  #main-nav ul,
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #main-nav li,
+  .col-one {
+    flex: 1;
+  }
 }
