@@ -1,112 +1,100 @@
 /* Strucutre */
 body 
 {
-    background:#0753a513;
-    background:url(images/Mobile.png);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: #232b32;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 #content
 {
-    background:#0753a513;
-    width: 95%;
-    margin:auto;
-    padding: 0px 5px;
-    border-radius: 5px;
+  background: #232b32;
+  width: 95%;
+  margin: auto;
+  padding: 0px 5px;
+  border-radius: 5px;
 }
 
 #main-header,
 #main-footer
 {
-    background:#0753a513;
-    padding: 4px;
-   
+  background: #232b32;
+  padding: 4px;
 }
 
-#main-header
-{
-    border-radius: 4px  4px 0px;
+#main-header {
+  border-radius: 4px 4px 0px;
 }
 
-#main-footer
-{
-    border-radius: 0 0 4px 4px;
+#main-footer {
+  border-radius: 0 0 4px 4px;
 }
 
-.col-one
-{
-    background:#0753a5cb;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 4px;
+.col-one {
+  background: #232b32;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 4px;
 }
 
-.nestcol1
-{
-    background:#001e3dcb;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 4px;
+.nestcol1 {
+  background:#232b32;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 4px;
 }
 
 /* Main Navigation */
 
-#main-nav ul
-{
-    padding-left: 0;
+#main-nav ul {
+  padding-left: 0;
 }
 
-#main-nav li
-{
-    text-align: center;
-    list-style-type: none;
-    background: rgb(2, 40, 211);
-    padding: 4px;
-    border-bottom: 1px solid gray;
+#main-nav li {
+  text-align: center;
+  list-style-type: none;
+  background: rgb(2, 40, 211);
+  padding: 4px;
+  border-bottom: 1px solid gray;
 }
 
-#main-nav a
-{
-    text-decoration: none;
-    color: white;
+#main-nav a {
+  text-decoration: none;
+  color: white;
 }
 
-#main-nav a:hover
-{
-    color: purple;
+#main-nav a:hover {
+  color: purple;
 }
-.hidden
-{
-    display: none;
+.hidden {
+  display: none;
 }
-.hide
-{
-    visibility: hidden;
+.hide {
+  visibility: hidden;
 }
 /*Typograpghy*/
 
-#main-header h1
-{
-    text-align: center;
+#main-header h1 {
+  text-align: center;
+  color: white;
 }
 
 /*Larger Resolutions*/
-@media (min-width: 1280px) 
-{
-    body
-    {
-        background:#0753a513;
-        background:url(images/NERV.png);
-    }
-    #main-nav ul, .flex-container
-    {
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #main-nav li, .col-one
-    {
-        flex: 1;
-    }
+@media (min-width: 1280px) {
+  body 
+  {
+    background: #232b32;
+  }
+  #main-nav ul,
+  .flex-container 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #main-nav li,
+  .col-one 
+  {
+    flex: 1;
+  }
 }
