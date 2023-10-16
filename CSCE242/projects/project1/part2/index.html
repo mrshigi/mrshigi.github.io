@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Sean Raudat for CSCE 242 -->
+<html>
+<head>
+    <title>Project Part 1</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header id="main-header">
+        <h1>Shigi Finance</h1>
+        <nav id="main-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/CSCE242/projects/project1/part1/market/market.html">Market</a></li>
+            <li><a href="/CSCE242/projects/project1/part1/news/news.html">News</a></li>
+            <li><a href="/CSCE242/projects/project1/part1/portfolio/portfolio.html">Portfolio</a></li>
+            <li><a href="/CSCE242/projects/project1/part1/account/account.html">Account</a></li>
+        </ul>
+        </nav>
+    </header>
+    <h2> Total Value Invested </h2>
+            <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR to USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+    </script>
+  </div>
+    <main id="main-content">
+
+  <!-- TradingView Widget END -->
+        <div class="flex-container">
+            <section class="col-one">
+                <h2>Daily Movers</h2>
+                <section id="slideshow">
+                    <img src="images/AMD.png">
+                    <img src="images/nvidia.png" class="hidden">
+                    <img src="images/XOM.png" class="hidden">
+                </section>
+            </section>
+            <section class="col-one">
+                <h2>News Articles</h2>
+                <section id="slideshow">
+                    <img src="images/AMD.png">
+                    <img src="images/nvidia.png" class="hidden">
+                    <img src="images/XOM.png" class="hidden">
+                </section>
+            </section>
+
+            <section class="col-one">
+                <h2>Watchlist</h2>
+                <section class="comment1">
+                    <div id="comment">
+                        <table>
+                            <tr>
+                                <td><label for="txt-product-name">Product Name:</label> </td>
+                                <td><br /></td>
+                                <td><input type="text" id="txt-product-name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="txt-comment">Comment:</label></td>
+                                <td><br /></td>
+                                <td> <input type="text" id="txt-comment"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="rating">Rating:</label></td>
+                                <td><br /></td>
+                                <td> <input type="number" id="rating" min="0" max="5"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="txt-user-name">User Name:</label></td>
+                                <td><br /></td>
+                                <td><input type="text" id="txt-user-name"></td>
+                            </tr>
+                        </table>
+                        <button id="button-comment">Add Comment</button>
+                    </div>
+                </section>
+            </section>
+        </div>
+        </section>
+    </main>
+    <footer id="main-footer">
+        <p>
+            Goodbye!
+        </p>
+        <p>&copy; mrshigi.github.io</p>
+    </footer>
+    
+<script src="script.js"></script>
+</body>
+
+</html>
