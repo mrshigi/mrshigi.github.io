@@ -57,7 +57,7 @@ a:hover {
 h2 {
   text-align: center;
 }
-#main-content h3,
+h3,
 a {
   text-align: center;
   align-items: center;
@@ -94,4 +94,10 @@ img {
   .col-one {
     flex: 1;
   }
+  h3,
+a {
+  text-align: center;
+  align-items: center;
+}
+
 }

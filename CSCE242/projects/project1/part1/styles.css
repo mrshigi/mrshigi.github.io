@@ -1,12 +1,13 @@
 /* Strucutre */
-body {
-  background: #0753a513;
-  background: url(images/Mobile.png);
+body 
+{
+  background: #232b32;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-#content {
-  background: #0753a513;
+#content
+{
+  background: #232b32;
   width: 95%;
   margin: auto;
   padding: 0px 5px;
@@ -14,8 +15,9 @@ body {
 }
 
 #main-header,
-#main-footer {
-  background: #0753a513;
+#main-footer
+{
+  background: #232b32;
   padding: 4px;
 }
 
@@ -28,14 +30,14 @@ body {
 }
 
 .col-one {
-  background: #0753a5cb;
+  background: #232b32;
   padding: 5px 10px;
   border-radius: 5px;
   margin: 4px;
 }
 
 .nestcol1 {
-  background: #001e3dcb;
+  background:#232b32;
   padding: 5px 10px;
   border-radius: 5px;
   margin: 4px;
@@ -73,23 +75,26 @@ body {
 
 #main-header h1 {
   text-align: center;
+  color: white;
 }
 
 /*Larger Resolutions*/
 @media (min-width: 1280px) {
-  body {
-    background: #0753a513;
-    background: url(images/NERV.png);
+  body 
+  {
+    background: #232b32;
   }
   #main-nav ul,
-  .flex-container {
+  .flex-container 
+  {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   #main-nav li,
-  .col-one {
+  .col-one 
+  {
     flex: 1;
   }
 }
