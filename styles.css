@@ -99,5 +99,10 @@ a {
   text-align: center;
   align-items: center;
 }
+img {
+  padding: 1px;
+  border-radius: 3.5px;
+  align-items: center;
+}
 
 }
