@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Project Part 1</title>
+    <title>Project Part 2</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -16,7 +16,7 @@
                 <li><a href="/CSCE242/projects/project1/part2/market/market.html">Market</a></li>
                 <li><a href="/CSCE242/projects/project1/part2/news/news.html">News</a></li>
                 <li><a href="/CSCE242/projects/project1/part2/portfolio/portfolio.html">Portfolio</a></li>
-                <li><a href="/CSCE242/projects/project1/part2/">Account</a></li>
+                <li><a href="/CSCE242/projects/project1/part2/account/account.html">Account</a></li>
             </ul>
         </nav>
     </header>
@@ -79,26 +79,24 @@
             </section>
 
             <section class="col-one">
-                <h2>Watchlist</h2>
-                <section class="comment1">
-                    <div id="comment">
-                        <table>
-                            <tr>
-                                <td><label for="txt-product-name">Ticker:</label> </td>
-                                <td><br /></td>
-                                <td><input type="text" id="txt-product-name"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="txt-comment">Shares:</label></td>
-                                <td><br /></td>
-                                <td> <input type="text" id="txt-comment"></td>
-                            </tr>
-                        </table>
-                        <button id="button-comment">Add Comment</button>
-                    </div>
-                </section>
-            </section>
-        </div>
+                <h2>Economic Indicators</h2>
+              <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+    {
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "width": "510",
+    "height": "600",
+    "locale": "en",
+    "importanceFilter": "0,1",
+    "currencyFilter": "USD"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
         </section>
     </main>
     <footer id="main-footer">
