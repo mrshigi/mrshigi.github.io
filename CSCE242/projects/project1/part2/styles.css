@@ -21,22 +21,26 @@ body
   padding: 4px;
 }
 
-#main-header {
+#main-header 
+{
   border-radius: 4px 4px 0px;
 }
 
-#main-footer {
+#main-footer 
+{
   border-radius: 0 0 4px 4px;
 }
 
-.col-one {
+.col-one 
+{
   background: #232b32;
   padding: 5px 10px;
   border-radius: 5px;
   margin: 4px;
 }
 
-.nestcol1 {
+.nestcol1 
+{
   background:#232b32;
   padding: 5px 10px;
   border-radius: 5px;
@@ -45,11 +49,13 @@ body
 
 /* Main Navigation */
 
-#main-nav ul {
+#main-nav ul
+{
   padding-left: 0;
 }
 
-#main-nav li {
+#main-nav li 
+{
   text-align: center;
   list-style-type: none;
   background: rgb(2, 40, 211);
@@ -57,23 +63,29 @@ body
   border-bottom: 1px solid gray;
 }
 
-#main-nav a {
+#main-nav a 
+{
   text-decoration: none;
   color: white;
 }
 
-#main-nav a:hover {
+#main-nav a:hover 
+{
   color: purple;
 }
-.hidden {
+.hidden 
+{
   display: none;
 }
-.hide {
+.hide 
+{
   visibility: hidden;
 }
+
 /*Typograpghy*/
 
-#main-header h1 {
+h1, h2
+{
   text-align: center;
   color: white;
 }
