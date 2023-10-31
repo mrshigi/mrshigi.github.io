@@ -11,6 +11,13 @@ async function fetchMovies() {
 
             const title = document.createElement("h2");
             title.textContent = movie.title;
+            /*let ul = document.createElement("ul");
+            section.append(ul);
+            ul.append(getLi(`Director: ${movie.director}`));
+            ul.append(getLi(`Actors: ${movie.actors}`));
+            ul.append(getLi(`Year: ${movie.year}`));
+            ul.append(getLi(`Genre: ${movie.genres}`));
+            ul.append(getLi(`Description: ${movie.description}`));*/
 
             const image = document.createElement("img");
             image.src = `https://portiaportia.github.io/json/images/${movie.image}`;
