@@ -1,0 +1,46 @@
+<h2>Contact Me Form</h2>
+<form id="contact-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const successMessage = document.createElement("p");
+  successMessage.textContent = "Thank you for your message! We will be in touch soon.";
+  successMessage.classList.add("success-message");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (form.checkValidity()) {
+      // code for sending email goes here
+      form.reset();
+      form.insertAdjacentElement("afterend", successMessage);
+    } else {
+      form.reportValidity();
+    }
+  });
+</script>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid}
