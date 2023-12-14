@@ -1,10 +1,9 @@
 /* Strucutre */
-body 
-{
-  background: #232b32;
+body {
+  background: #0753a513;
+  background: url(images/Mobile.png);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
 #content
 {
   background: #232b32;
@@ -86,9 +85,9 @@ body
 
 /*Larger Resolutions*/
 @media (min-width: 1280px) {
-  body 
-  {
-    background: #232b32;
+  body {
+    background: #0753a513;
+    background: url(images/NERV.png);
   }
   #main-nav ul,
   .flex-container 
