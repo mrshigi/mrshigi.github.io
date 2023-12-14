@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <!-- Sean Raudat for CSCE 242 -->
 <html>
 
@@ -25,6 +24,47 @@
 
     <body>
         <main id="main-content">
+            <div class="flex-container">
+                <div class="container">
+                    <section class="col-one">
+                        <section class="info-section columns">
+                            <section>
+                              <h4>Stock Recommendation</h4>
+                              <p>
+                                Please enter your Stock Recommendation
+                              </p>
+                              <form id="form-Stock">
+                                <p>
+                                  <label for="Stock-name">Stock Name:</label>
+                                  <input type="text" id="Stock-name" name="Stock-name" required />
+                                </p>
+                                <p>
+                                  <label for="date">Date:</label>
+                                  <input type="date" id="-date" required />
+                                <p>
+                                  <input type="checkbox" name="terms" /><label
+                                    for="terms"
+                                    class="inline"
+                                    >I agree to the terms.</label
+                                  >
+                                </p>
+                      
+                                <p>
+                                  <button type="submit">Submit</button>
+                                </p>
+                              </form>
+                            </section>
+                            <section id="results" class="hidden">
+                              <h4>Results</h4>
+                              <p>
+                                Your Stocks information has been added to the system, soemone will
+                                contact you shortly.
+                              </p>
+                            </section>
+                          </section>
+                    </section>
+                </div>
+            </div>
             <div class="flex-container">
                 <div class="container">
                     <section class="col-one">
@@ -64,5 +104,6 @@
             </div>
         </main>
     </body>
-
+    <script src="contactme.js"></script>
+    <script src="form.js"></script>
 </html>
