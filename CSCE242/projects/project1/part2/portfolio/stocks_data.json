@@ -1,0 +1,22 @@
+{
+    "stocks": [
+        {
+            "name": "Advanced Micro Devices",
+            "symbol": "AMD",
+            "price": "150.25",
+            "image": "images/AMD.png"
+        },
+        {
+            "name": "Nvidia Corp",
+            "symbol": "NVDA",
+            "price": "280.15",
+            "image": "images/NVDA.png"
+        },
+        {
+            "name": "Bank of America Corp",
+            "symbol": "BAC",
+            "price": "31.32",
+            "image": "images/BAC.png"
+        }
+    ]
+}

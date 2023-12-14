@@ -28,7 +28,13 @@ body
 #main-footer {
   border-radius: 0 0 4px 4px;
 }
+#stocks-container{
+  background: #09263f;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 4px;
 
+}
 .col-one {
   background: #232b32;
   padding: 5px 10px;
