@@ -21,89 +21,101 @@
             </ul>
         </nav>
     </header>
-
     <body>
         <main id="main-content">
             <div class="flex-container">
-                <div class="container">
-                    <section class="col-one">
-                        <section class="info-section columns">
-                            <section>
-                              <h4>Stock Recommendation</h4>
-                              <p>
+                <section class="col-one">
+                    <section class="info-section columns">
+                        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {
+    "autosize": true,
+    "symbol": "NASDAQ:AAPL",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "dark",
+    "style": "1",
+    "locale": "en",
+    "enable_publishing": false,
+    "allow_symbol_change": true,
+    "hide_volume": true,
+    "support_host": "https://www.tradingview.com"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+                        <section>
+                            <h4>Stock Recommendation</h4>
+                            <p>
                                 Please enter your Stock Recommendation
-                              </p>
-                              <form id="form-Stock">
+                            </p>
+                            <form id="form-Stock">
                                 <p>
-                                  <label for="Stock-name">Stock Name:</label>
-                                  <input type="text" id="Stock-name" name="Stock-name" required />
+                                    <label for="Stock-name">Stock Name:</label>
+                                    <input type="text" id="Stock-name" name="Stock-name" required />
                                 </p>
                                 <p>
-                                  <label for="date">Date:</label>
-                                  <input type="date" id="-date" required />
+                                    <label for="date">Date:</label>
+                                    <input type="date" id="-date" required />
                                 <p>
-                                  <input type="checkbox" name="terms" /><label
-                                    for="terms"
-                                    class="inline"
-                                    >I agree to the terms.</label
-                                  >
-                                </p>
-                      
-                                <p>
-                                  <button type="submit">Submit</button>
-                                </p>
-                              </form>
-                            </section>
-                            <section id="results" class="hidden">
-                              <h4>Results</h4>
-                              <p>
-                                Your Stocks information has been added to the system, soemone will
-                                contact you shortly.
-                              </p>
-                            </section>
-                          </section>
-                    </section>
-                </div>
-            </div>
-            <div class="flex-container">
-                <div class="container">
-                    <section class="col-one">
-                        <h3>Contact Me</h3>
-                        <div class="columns">
-                            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                                <input type="hidden" name="access_key" value="67755b06-eeeb-4add-88cf-41e92e308be5" />
-
-                                <p>
-                                    <label for="name">Name:</label>
-                                    <input id="name" type="text" placeholder="first and last" name="name" required />
+                                    <input type="checkbox" name="terms" /><label for="terms" class="inline">I agree to
+                                        the terms.</label>
                                 </p>
                                 <p>
-                                    <label for="email">Email:</label>
-                                    <input id="email" type="email" name="email" required />
+                                    <button type="submit">Submit</button>
                                 </p>
-                                <p>
-                                    <label for="message">Message:</label>
-                                    <textarea id="message" name="message" required></textarea>
-                                </p>
-                                <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-                                <input type="hidden" name="subject" value="Contact me" />
-                                <input type="hidden" name="from_name" value="My Website" />
-
-                                <p>
-                                    <button type="submit">Submit Form</button>
-                                </p>
-
-                                <p id="result"></p>
                             </form>
-                            <iframe id="map"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.9680495664916!2d-81.03426492365364!3d33.99335442083652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb2802562b89%3A0x1f5707bd271c887!2sAssembly%20Blossom%20NB!5e0!3m2!1sen!2sus!4v1697203534136!5m2!1sen!2sus"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                        </section>
+                        <section id="results" class="hidden">
+                            <h4>Results</h4>
+                            <p>
+                                Your Stocks information has been added to the system, someone will
+                                contact you shortly.
+                            </p>
+                        </section>
                     </section>
+                </section>
+            <section class="col-one">
+                <h3>Contact Me</h3>
+                <div class="columns">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="67755b06-eeeb-4add-88cf-41e92e308be5" />
+
+                        <p>
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" placeholder="first and last" name="name" required />
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" name="email" required />
+                        </p>
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </p>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                        <input type="hidden" name="subject" value="Contact me" />
+                        <input type="hidden" name="from_name" value="My Website" />
+
+                        <p>
+                            <button type="submit">Submit Form</button>
+                        </p>
+
+                        <p id="result"></p>
+                    </form>
+                    <iframe id="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.9680495664916!2d-81.03426492365364!3d33.99335442083652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb2802562b89%3A0x1f5707bd271c887!2sAssembly%20Blossom%20NB!5e0!3m2!1sen!2sus!4v1697203534136!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+            </section>
+            </div>
             </div>
         </main>
     </body>
     <script src="contactme.js"></script>
     <script src="form.js"></script>
+
 </html>
